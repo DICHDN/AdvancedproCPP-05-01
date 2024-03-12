@@ -8,8 +8,8 @@ void pow_2(Temp a)
 {
     std::cout << a * a << std::endl;
 }
-template  <>
-void pow_2(std::vector<int> a)
+template  <class Temp>
+void pow_2(std::vector<Temp> a)
 {
     for (int i = 0; i < a.size(); ++i)
     {
@@ -23,7 +23,7 @@ void pow_2(std::vector<int> a)
 
 int main()
 {
-    std::vector <int> arr = { 1,2,3,4,5,6,7 };
+    std::vector <double> arr = { 1,2,3,4,5,6,7 };
     int b = 10;
     double c = 9;
 
